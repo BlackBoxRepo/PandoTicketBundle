@@ -5,5 +5,5 @@ use BlackBoxCode\Pando\Bundle\NoteBundle\Model\NoteTypeInterface as NoteBundleNo
 
 interface NoteTypeInterface extends NoteBundleNoteTypeInterface
 {
-    const NOTE = 'Note';
+    const TICKET = 'Ticket';
 }
