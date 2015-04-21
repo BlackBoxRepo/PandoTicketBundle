@@ -11,12 +11,22 @@
     "keywords": ["pando ticket bundle"],
     "license": ["LGPL-3.0"],
     "require": {
+        "blackboxcode/pando-note-bundle": "1.0.0",
+        "blackboxcode/pando-user-bundle": "1.0.0"
     },
     "autoload": {
         "psr-4": {"BlackBoxCode\\Pando\\Bundle\\TicketBundle\\": ""}
     },
-    "repositories": [{
-    }],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/BlackBoxRepo/PandoNoteBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/BlackBoxRepo/PandoUserBundle"
+        }
+    ],
     "extra": {
         "branch-alias": {
             "dev-master": "develop"
