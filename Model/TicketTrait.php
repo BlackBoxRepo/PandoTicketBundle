@@ -33,6 +33,20 @@ trait TicketTrait
     private $description;
 
     /**
+     * @var \DateTime
+     *
+     * @ORM\Column(type="datetime")
+     */
+    private $createdOn;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(type="datetime")
+     */
+    private $updatedOn;
+
+    /**
      * @var TicketStatusTypeInterface
      *
      * @ORM\ManyToOne(targetEntity="TicketStatusType")
@@ -141,6 +155,42 @@ trait TicketTrait
     public function setDescription($description)
     {
         $this->description = $description;
+        
+        return $this;
+    }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function getCreatedOn()
+    {
+        return $this->createdOn;
+    }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function setCreatedOn(\DateTime $createdOn)
+    {
+        $this->createdOn = $createdOn;
+        
+        return $this;
+    }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function getUpdatedOn()
+    {
+        return $this->updatedOn;
+    }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function setUpdatedOn(\DateTime $updatedOn)
+    {
+        $this->updatedOn = $updatedOn;
         
         return $this;
     }

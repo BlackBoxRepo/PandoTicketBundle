@@ -41,6 +41,28 @@ interface TicketInterface extends IdInterface
     public function setDescription($description);
 
     /**
+     * @return \DateTime
+     */
+    public function getCreatedOn();
+
+    /**
+     * @param \DateTime $createdOn
+     * @return $this
+     */
+    public function setCreatedOn(\DateTime $createdOn);
+
+    /**
+     * @return \DateTime
+     */
+    public function getUpdatedOn();
+
+    /**
+     * @param \DateTime $updatedOn
+     * @return $this
+     */
+    public function setUpdatedOn(\DateTime $updatedOn);
+
+    /**
      * @return TicketStatusTypeInterface
      */
     public function getStatus();
