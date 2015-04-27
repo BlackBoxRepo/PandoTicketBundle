@@ -6,6 +6,9 @@ use BlackBoxCode\Pando\Bundle\UserBundle\Model\UserInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * @ORM\Entity
+ */
 trait TicketTrait
 {
     use IdTrait;

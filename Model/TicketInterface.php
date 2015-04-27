@@ -5,6 +5,13 @@ use BlackBoxCode\Pando\Bundle\BaseBundle\Model\IdInterface;
 use BlackBoxCode\Pando\Bundle\UserBundle\Model\UserInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 
+/**
+ * @ORM\Entity
+ * @ORM\Table(indexes={
+ *     @ORM\Index(columns={"createdOn"}),
+ *     @ORM\Index(columns={"updatedOn"})
+ * })
+ */
 interface TicketInterface extends IdInterface
 {
     /**
