@@ -20,6 +20,6 @@
         "blackboxcode/pando-user-bundle": "dev-master"
     },
     "autoload": {
-        "psr-4": {"BlackBoxCode\\Pando\\Bundle\\TicketBundle\\": ""}
+        "psr-4": {"BlackBoxCode\\Pando\\TicketBundle\\": ""}
     }
 }

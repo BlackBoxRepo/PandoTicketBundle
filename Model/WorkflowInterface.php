@@ -1,7 +1,7 @@
 <?php
-namespace BlackBoxCode\Pando\Bundle\TicketBundle\Model;
+namespace BlackBoxCode\Pando\TicketBundle\Model;
 
-use BlackBoxCode\Pando\Bundle\BaseBundle\Model\IdInterface;
+use BlackBoxCode\Pando\BaseBundle\Model\IdInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 
 interface WorkflowInterface extends IdInterface

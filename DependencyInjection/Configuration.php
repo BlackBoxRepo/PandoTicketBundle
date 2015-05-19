@@ -1,6 +1,6 @@
 <?php
 
-namespace BlackBoxCode\Pando\Bundle\TicketBundle\DependencyInjection;
+namespace BlackBoxCode\Pando\TicketBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('black_box_code_pando_bundle_ticket');
+        $rootNode = $treeBuilder->root('black_box_code_pando_ticket');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
